@@ -75,6 +75,7 @@ const siteMetadata = {
         description: `Want to learn more about our capabilities? Reach out to tell us about how we can help your mission.`,
         mail: "help@cerberus.dev",
         phone: "‪+1 (347) 637-8137‬",
+        address: "Tampa, FL",
     },
     disqus: "elemental-netlify-com",
 }
