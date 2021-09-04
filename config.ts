@@ -9,7 +9,7 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `Radically Creative Ideas applied to National Security`,
-    description: `Cerberus Development sits at the nexus of IC experience and alternative thinking.`,
+    description: `Cerberus Development integrates IC experience and alternative thinking.`,
     about:
         "Cerberus Development applies alternative approaches to challenging national security problems. We understand the constraints of your environment, speak your language, and will set your mission up for success. We have experience across numerous domains including R&D, SOF, IC, and crisis response.",
     author: `@_akzhy`,
