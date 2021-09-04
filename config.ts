@@ -1,6 +1,6 @@
 const siteMetadata = {
     title: `Elemental`,
-    siteUrl: `http://localhost`,
+    siteUrl: `https://cerberus.dev`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
@@ -8,10 +8,10 @@ const siteMetadata = {
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
     cookiePolicy: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+    introTag: `Technical Consulting`,
+    description: `Cerberus Development integrates best practices from private and public sector to support specialized analytics and intelligence problems.`,
     about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
+        "Cerberus Development was founded in the desire to get critical national security problems out of the gate quickly, to reduce execution risk and setup operators for long-term success with larger integrators. We are selective in what problems we take on and have no desire to sustain the solution long-term - we simply prescribe the vector of your success.",
     author: `@_akzhy`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
