@@ -40,11 +40,11 @@ const siteMetadata = {
         },
     ],
     footerLinks: [
-        /*
+        
         {
-            name: "PRIVACY POLICY",
-            url: "/privacy-policy",
-        },*/
+            name: "CONTACT",
+            url: "/contact",
+        },
     ], 
     
     social: [
