@@ -14,7 +14,7 @@ import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const siteData = data.site.siteMetadata
-
+/*
     const portfolioList = data.portfolio.edges.map((item, _) => (
         <ItemPortfolio
             data={item.node}
@@ -26,7 +26,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const blogList = data.blog.edges.map(item => (
         <ItemBlog data={item.node} key={`b-item-index-${item.node.id}`} />
     ))
-
+*/
     return (
         <Layout
             front={true}
@@ -39,10 +39,12 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
+            <!--
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
-            </div>
+            </div>            
             <Blog>{blogList}</Blog>
+            -->
             <Contact data={siteData.contact} />
         </Layout>
     )
@@ -95,13 +97,14 @@ const Wall = ({ data }) => {
                 {data.introTag}
             </p>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
-            <ScrollIntoView selector="#portfolio">
+            <!--<ScrollIntoView selector="#portfolio">
                 <Button
                     title="SEE WORKS"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
             </ScrollIntoView>
+            -->
         </React.Fragment>
     )
 
@@ -153,7 +156,7 @@ const About = ({ data }) => {
         </div>
     )
 }
-
+/*
 const Blog = ({ children }) => {
     return (
         <div className="container mx-auto px-0">
@@ -166,7 +169,7 @@ const Blog = ({ children }) => {
         </div>
     )
 }
-
+*/
 const Contact = ({ data }) => {
     const hasContactForm = data.api_url
     return (
@@ -221,6 +224,7 @@ export const query = graphql`
                 }
             }
         }
+        
         portfolio: allMdx(
             filter: { fields: { sourceName: { eq: "portfolio" } } }
             limit: 6
