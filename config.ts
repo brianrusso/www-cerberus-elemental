@@ -46,8 +46,7 @@ const siteMetadata = {
             url: "/privacy-policy",
         },*/
     ], 
-    social: [],
-    /*
+    
     social: [
         {
             name: "Facebook",
@@ -57,8 +56,8 @@ const siteMetadata = {
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
-            url: "#",
-        },
+            url: "https://twitter.com/cerbdev",
+        },/*
         {
             name: "Instagram",
             icon: "/images/Instagram.svg",
@@ -68,8 +67,8 @@ const siteMetadata = {
             name: "Youtube",
             icon: "/images/Youtube.svg",
             url: "#",
-        },
-    ], */
+        },*/
+    ],
     contact: {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/d86ecdf2-7da6-4e2a-88d6-a3a29cff4226",
