@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ navPlaceholder, location, currentTheme,
                             <Link to="/" title={data.site.siteMetadata.title} className="inline-block">
                                 <Logo
                                     className={`duration-300 transition-all ${
-                                        scrolled ? "h-24" : "h-20"
+                                        scrolled ? "h-28" : "h-24"
                                     }`}
                                 />
                             </Link>
@@ -87,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ navPlaceholder, location, currentTheme,
                 <Link to="/" title={data.site.siteMetadata.title}>
                     <Logo
                         className={`duration-300 transition-all ${
-                            scrolled ? "h-20" : "h-24"
+                            scrolled ? "h-24" : "h-28"
                         }`}
                     />
                 </Link>
