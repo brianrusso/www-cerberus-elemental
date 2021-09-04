@@ -11,7 +11,7 @@ const siteMetadata = {
     introTag: `Technical Consulting`,
     description: `Cerberus Development integrates best practices from private and public sector to support specialized analytics and intelligence problems.`,
     about:
-        "Cerberus Development was founded in the desire to get critical national security problems out of the gate quickly, to reduce execution risk and setup operators for long-term success with larger integrators. We are selective in what problems we take on and have no desire to sustain the solution long-term - we simply prescribe the vector of your success.",
+        "Cerberus Development brings alternative approaches to challenging national security problems.",
     author: `@_akzhy`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -25,7 +25,7 @@ const siteMetadata = {
         {
             name: "ABOUT",
             url: "/about",
-        },
+        },/*
         {
             name: "BLOG",
             url: "/blog",
@@ -33,22 +33,21 @@ const siteMetadata = {
         {
             name: "PORTFOLIO",
             url: "/portfolio",
-        },
+        },*/
         {
             name: "CONTACT",
             url: "/contact",
         },
     ],
     footerLinks: [
+        /*
         {
             name: "PRIVACY POLICY",
             url: "/privacy-policy",
-        },
-        {
-            name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
-        },
-    ],
+        },*/
+    ], 
+    social: [],
+    /*
     social: [
         {
             name: "Facebook",
@@ -70,14 +69,13 @@ const siteMetadata = {
             icon: "/images/Youtube.svg",
             url: "#",
         },
-    ],
+    ], */
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        api_url: "https://getform.io/f/d86ecdf2-7da6-4e2a-88d6-a3a29cff4226",
+        description: `Want to learn more about our capabilities? Reach out to tell us about how we can help your mission.`,
+        mail: "help@cerberus.dev",
+        phone: "‪+1 (347) 637-8137‬",
     },
     disqus: "elemental-netlify-com",
 }
