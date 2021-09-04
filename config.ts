@@ -72,7 +72,7 @@ const siteMetadata = {
     contact: {
         // leave empty ('') or false to hide form
         api_url: "",
-        description: `Want to learn more about our capabilities? Reach out to tell us about how we can help your mission.`,
+        description: `Tell us how we can help your mission.`,
         mail: "help@cerberus.dev",
         phone: "‪+1 (347) 637-8137‬",
         address: "Tampa, FL",
