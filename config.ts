@@ -8,10 +8,10 @@ const siteMetadata = {
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
     cookiePolicy: true,
-    introTag: `Technical Consulting`,
-    description: `Cerberus Development integrates best practices from private and public sector to support specialized analytics and intelligence problems.`,
+    introTag: `Radically Creative Ideas applied to National Security`,
+    description: `Cerberus Development sits at the nexus of IC experience and alternative thinking.`,
     about:
-        "Cerberus Development brings alternative approaches to challenging national security problems.",
+        "Cerberus Development applies alternative approaches to challenging national security problems. We understand the constraints of your environment, speak your language, and will set your mission up for success. We have experience across numerous domains including R&D, SOF, IC, and crisis response.",
     author: `@_akzhy`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -42,17 +42,17 @@ const siteMetadata = {
     footerLinks: [
         
         {
-            name: "CONTACT",
-            url: "/contact",
+            name: "",
+            url: "",
         },
     ], 
     
-    social: [
+    social: [/*
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
             url: "#",
-        },
+        },*/
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
