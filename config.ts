@@ -1,5 +1,5 @@
 const siteMetadata = {
-    title: `Elemental`,
+    title: `Cerberus Development`,
     siteUrl: `https://cerberus.dev`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
