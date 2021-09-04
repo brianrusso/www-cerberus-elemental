@@ -14,19 +14,6 @@ import { IndexPageQuery } from "./__generated__/IndexPageQuery"
 
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const siteData = data.site.siteMetadata
-/*
-    const portfolioList = data.portfolio.edges.map((item, _) => (
-        <ItemPortfolio
-            data={item.node}
-            key={`p-item-index-${item.node.id}`}
-            even={(_ + 1) % 2 === 0}
-        />
-    ))
-
-    const blogList = data.blog.edges.map(item => (
-        <ItemBlog data={item.node} key={`b-item-index-${item.node.id}`} />
-    ))
-*/
     return (
         <Layout
             front={true}
@@ -39,12 +26,7 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
-            <!--
-            <div className="px-4 lg:px-0" id="portfolio">
-                {portfolioList}
-            </div>            
-            <Blog>{blogList}</Blog>
-            -->
+
             <Contact data={siteData.contact} />
         </Layout>
     )
@@ -97,14 +79,6 @@ const Wall = ({ data }) => {
                 {data.introTag}
             </p>
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
-            <!--<ScrollIntoView selector="#portfolio">
-                <Button
-                    title="SEE WORKS"
-                    type="button"
-                    iconRight={<ArrowRight />}
-                />
-            </ScrollIntoView>
-            -->
         </React.Fragment>
     )
 
@@ -156,20 +130,7 @@ const About = ({ data }) => {
         </div>
     )
 }
-/*
-const Blog = ({ children }) => {
-    return (
-        <div className="container mx-auto px-0">
-            <div className="pt-20 pb-10 text-center lg:pt-40 lg:pb-20">
-                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    Blog
-                </h2>
-            </div>
-            <div className="flex flex-wrap">{children}</div>
-        </div>
-    )
-}
-*/
+
 const Contact = ({ data }) => {
     const hasContactForm = data.api_url
     return (
@@ -224,55 +185,6 @@ export const query = graphql`
                 }
             }
         }
-        
-        portfolio: allMdx(
-            filter: { fields: { sourceName: { eq: "portfolio" } } }
-            limit: 6
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        description
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 1000) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
-        blog: allMdx(
-            filter: { fields: { sourceName: { eq: "blog" } } }
-            limit: 6
-        ) {
-            edges {
-                node {
-                    id
-                    frontmatter {
-                        title
-                        description
-                        date(formatString: "DD MMMM YYYY")
-                        image {
-                            childImageSharp {
-                                fluid(maxWidth: 1000) {
-                                    ...GatsbyImageSharpFluid
-                                }
-                            }
-                        }
-                    }
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
+
     }
 `
