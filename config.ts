@@ -71,7 +71,7 @@ const siteMetadata = {
     ],
     contact: {
         // leave empty ('') or false to hide form
-        api_url: "https://getform.io/f/d86ecdf2-7da6-4e2a-88d6-a3a29cff4226",
+        api_url: "",
         description: `Want to learn more about our capabilities? Reach out to tell us about how we can help your mission.`,
         mail: "help@cerberus.dev",
         phone: "‪+1 (347) 637-8137‬",
